@@ -1,0 +1,19 @@
+<h4 align="left">Master label beolvasása</h4> 
+
+<div align="left">
+
+<%= form_for(:scan, :html => {class: "form", role: "form"}, url: scan_path) do |f| %>
+
+  <div class="form-group">
+    <%= f.text_field :sorszam, class: "form-control", placeholder: "Raklap sorszám...", autofocus: true %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.submit "Küld" %>
+  </div>
+<% end %>
+<br>
+<br>
+<%= link_to 'Vissza a főoldalra', root_path %>
+
+</div>

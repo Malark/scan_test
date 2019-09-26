@@ -1,0 +1,11 @@
+<h4 align="left">Címke adatok</h4> 
+
+<p>Szállítólevél: <%= @elem.U_forrasbiz %></p>
+<p>Cikkszám: <%= @elem.U_ItemCode %></p>
+<p>Megnevezés: <%= @elem.U_itemname %></p>
+<p>Vevő cikkszám: <%= @elem.U_SubCatNum %></p>
+<p>Címke azonosító: <%= @elem.U_raklap2 %></p>
+<br>
+
+<%= link_to 'Új beolvasás', scan_path %> | 
+<%= link_to 'Vissza a főoldalra', root_path %>
